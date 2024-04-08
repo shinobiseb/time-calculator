@@ -1,0 +1,1 @@
+Simple Time calculator for ease of use with no ads
