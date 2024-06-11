@@ -1,6 +1,7 @@
 let startTime = document.getElementById('Start')
 let endTime = document.getElementById('End')
 let value = document.getElementById('value')
+let button = document.getElementById('Calculate-button')
 
 let output = document.getElementById('Output')
 
@@ -33,3 +34,14 @@ function calculateTime() {
     }
 }
 
+startTime.addEventListener('keydown', function(event)  {
+    if(event.key === 'Enter') {
+        button.click()
+    }
+})
+
+endTime.addEventListener('keydown', function(event)  {
+    if(event.key === 'Enter') {
+        button.click()
+    }
+})
