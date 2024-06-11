@@ -11,6 +11,11 @@ function calculateDecimals() {
     return [start/60, end/60]
 }
 
+function round(dec) {
+    let output = Math.round(dec * 100)/100
+    return output
+}
+
 function calculateTime() { 
 
     let startDec = calculateDecimals()[0]
@@ -21,6 +26,10 @@ function calculateTime() {
 
     let hourDiff = end - start
 
-    output.innerHTML = hourDiff + " hours"
+    if(hourDiff % 1 !== 0) {
+        output.innerHTML = round(hourDiff) + " hours"
+    } else {
+        output.innerHTML = hourDiff + " hours"
+    }
 }
 
