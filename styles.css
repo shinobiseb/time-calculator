@@ -1,4 +1,4 @@
-.container {
+/* .container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     flex-direction: column;
-}
+} */
 
 button {
     margin-top: 40px;
