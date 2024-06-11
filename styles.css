@@ -32,3 +32,10 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+.final-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
