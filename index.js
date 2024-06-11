@@ -23,3 +23,4 @@ function calculateTime() {
 
     output.innerHTML = hourDiff + " hours"
 }
+
