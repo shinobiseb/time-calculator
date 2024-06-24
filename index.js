@@ -1,8 +1,16 @@
-let startTime = document.getElementById('Start')
-let endTime = document.getElementById('End')
-let value = document.getElementById('value')
+const startTime = document.getElementById('Start')
+const endTime = document.getElementById('End')
+const value = document.getElementById('value')
+const output = document.getElementById('Output')
+const timeListGet = document.getElementById('timeList')
 
-let output = document.getElementById('Output')
+let timeList = []
+
+function addToList(item) {
+    let li = document.createElement('LI')
+    li.textContent = item
+    timeListGet.append()
+}
 
 function calculateDecimals() {
     let start = startTime.value.slice(3, 5)

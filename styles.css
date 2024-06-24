@@ -31,3 +31,11 @@ button {
     color: var(--blue);
     border-color: var(--blue);
 }
+
+ul {
+    display: flex;
+    border: 1px blue solid;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
