@@ -1,22 +1,20 @@
-const startTime = document.getElementById('Start')
-const endTime = document.getElementById('End')
-const value = document.getElementById('value')
-const output = document.getElementById('Output')
-const timeListGet = document.getElementById('timeList')
+let startTime = document.getElementById('Start')
+let endTime = document.getElementById('End')
+let value = document.getElementById('value')
+let button = document.getElementById('Calculate-button')
 
-let timeList = []
-
-function addToList(item) {
-    let li = document.createElement('LI')
-    li.textContent = item
-    timeListGet.append()
-}
+let output = document.getElementById('Output')
 
 function calculateDecimals() {
     let start = startTime.value.slice(3, 5)
     let end = endTime.value.slice(3, 5)
 
     return [start/60, end/60]
+}
+
+function round(dec) {
+    let output = Math.round(dec * 100)/100
+    return output
 }
 
 function calculateTime() { 
@@ -29,5 +27,21 @@ function calculateTime() {
 
     let hourDiff = end - start
 
-    output.innerHTML = hourDiff + " hours"
+    if(hourDiff % 1 !== 0) {
+        output.innerHTML = round(hourDiff) + " hours"
+    } else {
+        output.innerHTML = hourDiff + " hours"
+    }
 }
+
+startTime.addEventListener('keydown', function(event)  {
+    if(event.key === 'Enter') {
+        button.click()
+    }
+})
+
+endTime.addEventListener('keydown', function(event)  {
+    if(event.key === 'Enter') {
+        button.click()
+    }
+})

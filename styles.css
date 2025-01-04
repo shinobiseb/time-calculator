@@ -1,10 +1,4 @@
-* {
-    box-sizing: border-box;
-    background-color: #BCCCE0;
-    --blue: #312F2F
-}
-
-.container {
+/* .container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -12,7 +6,7 @@
     align-items: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     flex-direction: column;
-}
+} */
 
 button {
     margin-top: 40px;
@@ -32,10 +26,16 @@ button {
     border-color: var(--blue);
 }
 
-ul {
+.time-div {
     display: flex;
-    border: 1px blue solid;
-    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
